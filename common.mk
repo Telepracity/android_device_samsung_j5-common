@@ -54,6 +54,11 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing
+	
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+    qcom.bluetooth.soc=smd \
+    ro.qualcomm.bt.hci_transport=smd
 
 # TinyAlsa utils
 PRODUCT_PACKAGES += \
