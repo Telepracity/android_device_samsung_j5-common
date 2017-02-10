@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2017 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -117,12 +117,6 @@ BOARD_VOLD_MAX_PARTITIONS := 65
 # Camera
 TARGET_PROVIDES_CAMERA_HAL := true
 USE_DEVICE_SPECIFIC_CAMERA := true
-# Reference for Gralloc. In case the above do not work, we try those too.
-#TARGET_USE_COMPAT_GRALLOC_ALIGN := true
-#TARGET_USE_COMPAT_GRALLOC_PERFORM := true
-#BOARD_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
-#TARGET_HAS_LEGACY_CAMERA_HAL1 := true
-#TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 
 # Workaround to avoid issues with legacy liblights on QCOM platforms
 TARGET_PROVIDES_LIBLIGHT := true
@@ -140,7 +134,6 @@ PROTOBUF_SUPPORTED := true
 
 # Media
 TARGET_QCOM_MEDIA_VARIANT := caf
-#TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 
 # Display
 BOARD_EGL_CFG := device/samsung/j5-common/configs/egl.cfg
@@ -177,8 +170,6 @@ TW_TARGET_USES_QCOM_BSP := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Storage
-#RECOVERY_VARIANT := twrp
-#TARGET_RECOVERY_FSTAB := device/samsung/j5-common/recovery/twrp.fstab
 TARGET_RECOVERY_FSTAB := device/samsung/j5-common/rootdir/main/fstab.qcom
 TW_INTERNAL_STORAGE_PATH := "/data/media"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
