@@ -36,8 +36,8 @@ persist.dpm.feature=0
 ro.use_data_netmgrd=false
 persist.data.netmgrd.qos.enable=false
 
-# Symlink /data/media to /sdcard
-persist.fuse_sdcard=true
+# Storage
+ro.sys.sdcardfs=true
 
 # Display
 debug.sf.hw=1
@@ -54,21 +54,21 @@ vidc.enc.narrow.searchrange=1
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Audio
-audio.offload.video=true
-av.streaming.offload.enable=true
-audio.offload.min.duration.secs=30
-audio.offload.buffer.size.kb=32
-audio.offload.gapless.enabled=true
+ro.qc.sdk.audio.ssr=false
+ro.qc.sdk.audio.fluencetype=none
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
 persist.audio.fluence.speaker=true
-ro.qc.sdk.audio.fluencetype=none
-ro.qc.sdk.audio.ssr=false
-use.voice.path.for.pcm.voip=true
 tunnel.audio.encode=false
+audio.offload.buffer.size.kb=64
+audio.offload.min.duration.secs=30
+audio.offload.video=true
+use.voice.path.for.pcm.voip=true
 ro.fm.transmitter=false
-audio.offload.pcm.16bit.enable=true
-audio.offload.pcm.24bit.enable=true
+audio.offload.gapless.enabled=true
+voice.playback.conc.disabled=true
+voice.record.conc.disabled=true
+voice.voip.conc.disabled=true
 
 # Media
 mm.enable.smoothstreaming=true
