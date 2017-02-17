@@ -54,18 +54,10 @@ vidc.enc.narrow.searchrange=1
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Audio
-tunnel.audio.encode=false
-audio.offload.video=true
-audio.offload.gapless.enabled=true
-av.streaming.offload.enable=true
-audio.offload.buffer.size.kb=64
-audio.offload.pcm.16bit.enable=true
-audio.offload.pcm.24bit.enable=true
-use.voice.path.for.pcm.voip=true
+media.aac_51_output_enabled=true
+mm.enable.smoothstreaming=true
 ro.qc.sdk.audio.fluencetype=none
-persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicerec=false
-persist.audio.fluence.speaker=true
+use.voice.path.for.pcm.voip=false
 
 # Media
 mm.enable.smoothstreaming=true
