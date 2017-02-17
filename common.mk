@@ -48,7 +48,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audiod \
     audio.a2dp.default \
-    audio.primary.msm8226 \
+    audio.primary.msm8916 \
     audio.r_submix.default \
     audio.usb.default
 
