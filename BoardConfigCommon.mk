@@ -30,6 +30,9 @@ TARGET_BOARD_PLATFORM := msm8916
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno306
 TARGET_BOOTLOADER_BOARD_NAME := MSM8916
 
+# Audio HAL variant
+TARGET_AUDIOHAL_VARIANT := samsung
+
 # Arch
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
