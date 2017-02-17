@@ -211,3 +211,7 @@ TW_INCLUDE_CRYPTO := true
 TW_NO_USB_STORAGE := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 BOARD_RECOVERY_SWIPE := true
+
+# Toolchain
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
