@@ -114,9 +114,8 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
+    FMRadio \
+    libfmjni
 
 # Gello
 PRODUCT_PACKAGES += \
@@ -130,8 +129,7 @@ PRODUCT_PACKAGES += \
 
 # Configuration scripts
 PRODUCT_PACKAGES += \
-    init.qcom.bt.sh \
-    init.qcom.fm.sh
+    init.qcom.bt.sh
 
 # Ramdisk
 PRODUCT_PACKAGES += \

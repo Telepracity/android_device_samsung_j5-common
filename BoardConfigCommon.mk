@@ -78,7 +78,7 @@ USE_XML_AUDIO_POLICY_CONF := 1
 
 # FM
 AUDIO_FEATURE_ENABLED_FM := true
-BOARD_HAVE_QCOM_FM := true
+TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # Custom RIL class
 BOARD_RIL_CLASS := ../../../device/samsung/j5-common/ril/
