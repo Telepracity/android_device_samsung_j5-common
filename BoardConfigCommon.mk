@@ -82,6 +82,10 @@ BOARD_RIL_CLASS := ../../../device/samsung/j5-common/ril/
 BOARD_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 USE_DEVICE_SPECIFIC_DATASERVICES := true
 
+# Partitions
+TARGET_USERIMAGES_USE_F2FS := true
+TARGET_USERIMAGES_USE_EXT4 := true
+
 # PowerHAL
 TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/samsung/j5-common/power/power_ext.c
 TARGET_POWERHAL_VARIANT := qcom
