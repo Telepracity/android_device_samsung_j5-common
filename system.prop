@@ -89,7 +89,10 @@ ro.qualcomm.bluetooth.map=true
 ro.qualcomm.bluetooth.nap=true
 ro.qualcomm.bluetooth.opp=true
 ro.qualcomm.bluetooth.pbap=true
- 
+
+# Storage
+ro.sys.sdcardfs=true 
+
 # Misc.
 ro.chipname=MSM8916
 ro.warmboot.capability=1
