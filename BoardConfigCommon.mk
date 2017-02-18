@@ -126,12 +126,11 @@ BOARD_VOLD_MAX_PARTITIONS := 65
 # Camera
 TARGET_PROVIDES_CAMERA_HAL := true
 USE_DEVICE_SPECIFIC_CAMERA := true
-# Reference for Gralloc. In case the above do not work, we try those too.
-#TARGET_USE_COMPAT_GRALLOC_ALIGN := true
-#TARGET_USE_COMPAT_GRALLOC_PERFORM := true
-#BOARD_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
-#TARGET_HAS_LEGACY_CAMERA_HAL1 := true
-#TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
+
+# CMHW
+BOARD_HARDWARE_CLASS += device/samsung/a5-common/cmhw
+>>>>>>> b648ca1... [Camera]Enable HAL1 hacks
 
 # Workaround to avoid issues with legacy liblights on QCOM platforms
 TARGET_PROVIDES_LIBLIGHT := true

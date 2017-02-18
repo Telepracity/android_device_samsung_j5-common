@@ -94,6 +94,10 @@ PRODUCT_PACKAGES += \
     libboringssl-compat \
     libmm-qcamera
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.stagefright.legacyencoder=true \
+    media.stagefright.less-secure=true
+
 # GPS HAL
 PRODUCT_PACKAGES += \
     gps.msm8916
