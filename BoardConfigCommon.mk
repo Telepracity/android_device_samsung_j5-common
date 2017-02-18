@@ -158,6 +158,9 @@ MAX_VIRTUAL_DISPLAY_DIMENSION := 2048
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
+# Partitions
+TARGET_USERIMAGES_USE_F2FS := true
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
