@@ -130,7 +130,6 @@ TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
 # CMHW
 BOARD_HARDWARE_CLASS += device/samsung/a5-common/cmhw
->>>>>>> b648ca1... [Camera]Enable HAL1 hacks
 
 # Workaround to avoid issues with legacy liblights on QCOM platforms
 TARGET_PROVIDES_LIBLIGHT := true
