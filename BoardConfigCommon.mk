@@ -78,6 +78,7 @@ BOARD_HAVE_QCOM_FM := true
 
 # Custom RIL class
 BOARD_RIL_CLASS := ../../../device/samsung/j5-common/ril/
+BOARD_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 USE_DEVICE_SPECIFIC_DATASERVICES := true
 
 # PowerHAL
