@@ -143,7 +143,6 @@ PROTOBUF_SUPPORTED := true
 # Media
 TARGET_QCOM_MEDIA_VARIANT := caf
 #TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
-PRODUCT_COPY_FILES := $(filter-out frameworks/av/media/libeffects/data/audio_effects.conf:system/etc/audio_effects.conf , $(PRODUCT_COPY_FILES))
 
 # Display
 BOARD_EGL_CFG := device/samsung/j5-common/configs/egl.cfg
