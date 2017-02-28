@@ -67,13 +67,12 @@ EXTENDED_FONT_FOOTPRINT := true
 BOARD_HARDWARE_CLASS += device/samsung/j5-common/cmhw
 
 # Audio
-#TARGET_USES_QCOM_MM_AUDIO := true
 BOARD_USES_ALSA_AUDIO := true
 AUDIO_FEATURE_ENABLED_KPI_OPTIMIZE := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
-# FM
-AUDIO_FEATURE_ENABLED_FM := true
+# Enable QCOM FM feature
+TARGET_QCOM_NO_FM_FIRMWARE := true
 BOARD_HAVE_QCOM_FM := true
 
 # Custom RIL class
@@ -125,12 +124,7 @@ BOARD_VOLD_MAX_PARTITIONS := 65
 # Camera
 TARGET_PROVIDES_CAMERA_HAL := true
 USE_DEVICE_SPECIFIC_CAMERA := true
-# Reference for Gralloc. In case the above do not work, we try those too.
-#TARGET_USE_COMPAT_GRALLOC_ALIGN := true
-#TARGET_USE_COMPAT_GRALLOC_PERFORM := true
-#BOARD_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
-#TARGET_HAS_LEGACY_CAMERA_HAL1 := true
-#TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
 # Workaround to avoid issues with legacy liblights on QCOM platforms
 TARGET_PROVIDES_LIBLIGHT := true
@@ -149,6 +143,7 @@ PROTOBUF_SUPPORTED := true
 # Media
 TARGET_QCOM_MEDIA_VARIANT := caf
 #TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
+PRODUCT_COPY_FILES := $(filter-out frameworks/av/media/libeffects/data/audio_effects.conf:system/etc/audio_effects.conf , $(PRODUCT_COPY_FILES))
 
 # Display
 BOARD_EGL_CFG := device/samsung/j5-common/configs/egl.cfg
@@ -161,6 +156,9 @@ MAX_VIRTUAL_DISPLAY_DIMENSION := 2048
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+
+# Partitions
+TARGET_USERIMAGES_USE_F2FS := true
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
